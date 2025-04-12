@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WS playground</title>
+    <link rel="stylesheet" href="/src/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold">Travel Agency</div>
+        <div class="hidden md:flex gap-8">
+          <a
+            href="#"
+            class="font-medium text-black border-b-2 focus:border-black hover:text-black hover:border-b-2 border-black"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="font-medium text-gray-500 hover:text-black hover:border-b-2 border-black"
+            >About</a
+          >
+          <div class="relative group">
+            <button
+              class="font-medium text-gray-500 hover:text-black hover:border-b-2 border-black"
+            >
+              Destinations
+            </button>
+          </div>
+          <a
+            href="#"
+            class="font-medium text-gray-500 hover:text-black hover:border-b-2 border-black"
+            >Service</a
+          >
+          <a
+            href="/src/pages/contact.html"
+            class="font-medium text-gray-500 hover:text-black hover:border-b-2 border-black"
+            >Contact</a
+          >
+        </div>
+        <div class="relative">
+          <button id="searchToggle" class="text-xl">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <div class="block md:hidden">
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8 4h13M8 12h13m-7 8h7"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div
+          class="container mx-auto h-[90vh] flex items-center justify-center bg-cover bg-center rounded-2xl -z-10"
+          style="background-image: url('/assets/HomeBackground.jpg')"
+        >
+          <div class="text-center px-4">
+            <h1 class="text-5xl md:text-6xl font-bold text-black">
+              Eat, Sleep, And Travel
+            </h1>
+            <p class="text-gray-700 mt-4 max-w-xl mx-auto">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+            <button
+              class="mt-6 px-6 py-3 rounded-full font-semibold text-black hover:bg-gray-100 bg-white shadow-lg"
+            >
+              Learn More
+            </button>
+          </div>
+          <div class="absolute z-10 bottom-[-60px] w-full flex justify-center">
+            <div
+              class="bg-white shadow-lg rounded-xl flex flex-col md:flex-row items-center justify-around p-6 w-11/12 md:w-3/4"
+            >
+              <div class="text-center mb-4 md:mb-0">
+                <img src="" alt="Plane Icon" class="w-12 h-12 mx-auto mb-2" />
+                <div class="font-bold">Location</div>
+                <div class="text-gray-500">Sahara Desert</div>
+              </div>
+              <div class="text-center mb-4 md:mb-0">
+                <img
+                  src=""
+                  alt="Calender Icon"
+                  class="w-12 h-12 mx-auto mb-2"
+                />
+
+                <div class="font-bold">Date</div>
+                <div class="text-gray-500">15 June, 2021</div>
+              </div>
+              <div class="text-center">
+                <img src="" alt="Trip-length" class="w-12 h-12 mx-auto mb-2" />
+
+                <div class="font-bold">Trip Length</div>
+                <div class="text-gray-500">14 Days</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-24">
+        <div class="text-center mb-16">
+          <h2 class="text-sm font-semibold text-gray-500">ABOUT US</h2>
+          <h1 class="text-4xl font-bold">Who We Are</h1>
+          <p class="mt-4 text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16">
+          <div>
+            <img
+              src="/assets/about.jpg"
+              alt="About Us"
+              class="rounded-lg shadow-lg h-full"
+            />
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Our Mission</h3>
+            <p class="text-gray-500 mb-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+            <h3 class="text-xl font-semibold mb-4">Our Vision</h3>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto text-center px-4">
+          <h3 class="text-gray-500 uppercase tracking-wider text-sm mb-2">
+            Why Choose Us
+          </h3>
+          <h2 class="text-4xl font-bold mb-12">
+            Our Experience is Our Strength
+          </h2>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12"
+          >
+            <div class="p-6 rounded-lg shadow">
+              <div class="mb-4">
+                <svg
+                  class="w-12 h-12 mx-auto text-gray-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 2l9 21H3L12 2z"
+                  ></path>
+                </svg>
+              </div>
+              <h4 class="font-semibold mb-2">Experienced</h4>
+              <p class="text-gray-500 text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur tempor.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-lg shadow">
+              <div class="mb-4">
+                <svg
+                  class="w-12 h-12 mx-auto text-gray-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"
+                  ></path>
+                </svg>
+              </div>
+              <h4 class="font-semibold mb-2">Worldwide</h4>
+              <p class="text-gray-500 text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur tempor.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-lg shadow">
+              <div class="mb-4">
+                <svg
+                  class="w-12 h-12 mx-auto text-gray-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8c-1.333 2-4 2-4 4s2.667 2 4 4m0-8c1.333 2 4 2 4 4s-2.667 2-4 4"
+                  ></path>
+                </svg>
+              </div>
+              <h4 class="font-semibold mb-2">Cheap</h4>
+              <p class="text-gray-500 text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur tempor.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-lg shadow">
+              <div class="mb-4">
+                <svg
+                  class="w-12 h-12 mx-auto text-gray-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M2 8l10 6 10-6m-20 8l10 6 10-6"
+                  ></path>
+                </svg>
+              </div>
+              <h4 class="font-semibold mb-2">24/7 Service</h4>
+              <p class="text-gray-500 text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur tempor.
+              </p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800"
+          >
+            Book Now
+          </a>
+        </div>
+      </section>
+
+      <section id="services" class="py-24">
+        <div class="text-center mb-16">
+          <h2 class="text-sm font-semibold text-gray-500">SERVICES</h2>
+          <h1 class="text-4xl font-bold">What We Offer</h1>
+          <p class="mt-4 text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+          <div class="p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-4">Travel Planning</h3>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+          </div>
+          <div class="p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-4">Hotel Booking</h3>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+          </div>
+          <div class="p-6 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-4">Guided Tours</h3>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="destinations "
+        class="pb-24 bg-zinc-50 m-24 p-24 rounded-2xl"
+      >
+        <div class="max-w-7xl mx-auto px-4 text-center">
+          <h4 class="text-gray-500 uppercase tracking-widest text-sm mb-2">
+            Our Destination
+          </h4>
+          <h2 class="text-4xl font-bold mb-12">Find Your Peace Out There</h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="rounded-lg shadow overflow-hidden bg-white">
+              <img
+                src="public/assets/Countries/Russia.jpg"
+                alt="Russia"
+                class="w-full h-46"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold mb-2">Ocean Resort</h3>
+                <p class="text-gray-500 text-sm mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a href="#" class="text-black font-semibold text-sm"
+                  >Learn more &rarr;</a
+                >
+              </div>
+            </div>
+
+            <div class="rounded-lg shadow overflow-hidden bg-white">
+              <img
+                src="public/assets/Countries/dubai.jpg"
+                alt="Dubai"
+                class="w-full h-46"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold mb-2">Bromo Mountain</h3>
+                <p class="text-gray-500 text-sm mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a href="#" class="text-black font-semibold text-sm"
+                  >Learn more &rarr;</a
+                >
+              </div>
+            </div>
+
+            <div class="rounded-lg shadow overflow-hidden bg-white">
+              <img
+                src="public/assets/Countries/europe.jpg"
+                alt="Europe"
+                class="w-full h-46"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold mb-2">Europe</h3>
+                <p class="text-gray-500 text-sm mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a href="#" class="text-black font-semibold text-sm"
+                  >Learn more &rarr;</a
+                >
+              </div>
+            </div>
+
+            <div class="rounded-lg shadow overflow-hidden bg-white">
+              <img
+                src="public/assets/Countries/Canada.jpg"
+                alt="Canada"
+                class="w-full h-46"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold mb-2">Canada</h3>
+                <p class="text-gray-500 text-sm mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a href="#" class="text-black font-semibold text-sm"
+                  >Learn more &rarr;</a
+                >
+              </div>
+            </div>
+
+            <div class="rounded-lg shadow overflow-hidden bg-white">
+              <img
+                src="https://via.placeholder.com/400x250"
+                alt="Peaceful Lake"
+                class="w-full h-46"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold mb-2">Peaceful Lake</h3>
+                <p class="text-gray-500 text-sm mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a href="#" class="text-black font-semibold text-sm"
+                  >Learn more &rarr;</a
+                >
+              </div>
+            </div>
+
+            <div class="rounded-lg shadow overflow-hidden bg-white">
+              <img
+                src="https://via.placeholder.com/400x250"
+                alt="Waterfall"
+                class="w-full h-46"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold mb-2">Waterfall</h3>
+                <p class="text-gray-500 text-sm mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a href="#" class="text-black font-semibold text-sm"
+                  >Learn more &rarr;</a
+                >
+              </div>
+            </div>
+
+            <div class="rounded-lg shadow overflow-hidden bg-white">
+              <img
+                src="https://via.placeholder.com/400x250"
+                alt="Sunrise Cave"
+                class="w-full h-46"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold mb-2">Sunrise Cave</h3>
+                <p class="text-gray-500 text-sm mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a href="#" class="text-black font-semibold text-sm"
+                  >Learn more &rarr;</a
+                >
+              </div>
+            </div>
+
+            <div class="rounded-lg shadow overflow-hidden bg-white">
+              <img
+                src="https://via.placeholder.com/400x250"
+                alt="Batur Mountain"
+                class="w-full h-46"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold mb-2">Batur Mountain</h3>
+                <p class="text-gray-500 text-sm mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a href="#" class="text-black font-semibold text-sm"
+                  >Learn more &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-24">
+        <div class="relative w-full h-96 overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black to-transparent"
+          ></div>
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/path-to-your-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-4"
+          >
+            <h4 class="text-white uppercase tracking-widest text-sm mb-4">
+              Start Your Adventure
+            </h4>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+              What Are You Waiting For
+            </h1>
+            <p class="text-gray-200 max-w-2xl mb-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              tempor nunc non neque euismod porttitor. Nullam lacus est,
+              tincidunt eget sapien eget.
+            </p>
+            <a
+              href="#"
+              class="bg-white text-black font-semibold px-6 py-3 rounded-full hover:bg-gray-300 transition"
+            >
+              Book Now
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="pb-24">
+        <div
+          class="max-w-7xl mx-auto flex flex-wrap justify-between text-center px-4"
+          id="counter-section"
+        >
+          <div>
+            <div id="countup1" class="text-5xl p-2 font-bold" data-target="230">
+              0
+            </div>
+            <div class="text-gray-500 font-semibold text-2xl">
+              Satisfied Client
+            </div>
+          </div>
+          <div>
+            <div id="countup2" class="text-5xl p-2 font-bold" data-target="100">
+              0
+            </div>
+            <div class="text-gray-500 font-semibold text-2xl">New Traveler</div>
+          </div>
+          <div>
+            <div id="countup3" class="text-5xl p-2 font-bold" data-target="165">
+              0
+            </div>
+            <div class="text-gray-500 font-semibold text-2xl">Destination</div>
+          </div>
+          <div>
+            <div id="countup4" class="text-5xl p-2 font-bold" data-target="15">
+              0
+            </div>
+            <div class="text-gray-500 font-semibold text-2xl">
+              Award Winning
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="relative pb-72">
+        <div class="text-center mb-32">
+          <h2 class="text-sm font-semibold text-gray-500">CONTACT</h2>
+          <h1 class="text-4xl font-bold">Get In Touch</h1>
+          <p class="mt-4 text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+        </div>
+
+        <div
+          class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 relative z-10"
+        >
+          <div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 class="font-semibold mb-2">Ajman University</h3>
+                <p class="text-gray-500">University Street, Al Jerf 1, Ajman</p>
+                <p class="text-gray-500">+971 50 852 6665</p>
+                <p class="text-gray-500">202120115@ajmanuni.ac.ae</p>
+                <p class="text-gray-500">09.00 - 17.00</p>
+              </div>
+
+              <div>
+                <h3 class="font-semibold mb-2">Technology</h3>
+                <p class="text-gray-500">University Street, Al Jerf 1, Ajman</p>
+                <p class="text-gray-500">+971 50 852 6665</p>
+                <p class="text-gray-500">202120115@ajmanuni.ac.ae</p>
+                <p class="text-gray-500">09.00 - 17.00</p>
+              </div>
+            </div>
+
+            <div class="text-start col-span-1 md:col-span-2">
+              <h3 class="font-semibold mb-2">Social Media</h3>
+              <div class="flex sm:justify-start justify-center gap-4 mt-4">
+                <a href="#" class="text-black text-2xl"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="text-black text-2xl"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="text-black text-2xl"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="#" class="text-black text-2xl"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative flex justify-end">
+            <div
+              class="p-8 rounded-xl shadow-2xl bg-white relative -mt-16 max-w-md w-full md:w-auto"
+            >
+              <form action="#">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    class="border border-zinc-300 p-3 rounded-md w-full"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    class="border p-3 border-zinc-300 rounded-md w-full"
+                  />
+                </div>
+                <div class="mb-4">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="border border-zinc-300 p-3 rounded-md w-full"
+                  />
+                </div>
+                <div class="mb-4">
+                  <textarea
+                    placeholder="Message"
+                    class="border border-zinc-300 p-3 rounded-md w-full h-32"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="bg-black text-white px-6 py-3 rounded-full w-full border hover:text-black hover:border hover:bg-white"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-96 mt-32 absolute bottom-0 z-0">
+          <iframe
+            class="w-full h-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.776363068277!2d55.504000876101856!3d25.41229547757306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5f7efc9555555%3A0x8b63f4583099a98!2sAjman%20University!5e0!3m2!1sen!2sae!4v1744261526365!5m2!1sen!2sae"
+            frameborder="0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black text-white pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="text-2xl font-bold mb-4">Travel Agency</div>
+          <p class="text-gray-400 mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            pharetra condimentum.
+          </p>
+          <div class="flex gap-4">
+            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Our Address</h4>
+          <p class="text-gray-400">Ajman University</p>
+          <p class="text-gray-400">+971 50 852 6665</p>
+          <p class="text-gray-400">202120115@ajmanuni.ac.ae</p>
+          <p class="text-gray-400">09.00 - 17.00</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="text-gray-400 space-y-2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Newsletter</h4>
+          <form action="#" class="flex flex-col gap-4">
+            <input
+              type="email"
+              placeholder="Email"
+              class="p-3 rounded-lg bg-black border border-zinc-700 text-white"
+            />
+            <button
+              class="bg-white text-black px-6 py-2 rounded-full border hover:border-white hover:text-white hover:bg-black"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="text-center text-gray-500 text-sm mt-8">
+        Copyright &copy; 2025 Ajman University. All rights reserved.
+      </div>
+    </footer>
+    <script type="module" src="/src/javascript/countup.js"></script>
+    <script type="module" src="/src/javascript/carousel.js"></script>
+  </body>
+</html>

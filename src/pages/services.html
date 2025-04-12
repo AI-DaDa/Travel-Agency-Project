@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Services</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <section class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8">
+      <!-- Left Side -->
+      <div>
+        <h4 class="text-gray-500 uppercase tracking-widest text-sm mb-4">
+          Faqs
+        </h4>
+        <h2 class="text-4xl font-bold mb-6">Frequently Asked Question</h2>
+        <p class="text-gray-600">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+          felis ut justo viverra, ac rhoncus nisl auctor. Sed condimentum
+          fermentum velit, sit amet tempus lorem eleifend sed.
+        </p>
+      </div>
+
+      <!-- Right Side (Accordion) -->
+      <div class="space-y-4">
+        <div class="border rounded-lg overflow-hidden">
+          <button
+            class="w-full flex justify-between items-center p-4 font-semibold text-left bg-black text-white"
+            data-accordion
+          >
+            Can I book trip for couple
+            <span class="transform transition-transform">&#x25BC;</span>
+          </button>
+          <div class="p-4 hidden">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            commodo ligula eget dolor.
+          </div>
+        </div>
+
+        <div class="border rounded-lg overflow-hidden">
+          <button
+            class="w-full flex justify-between items-center p-4 font-semibold text-left bg-white hover:bg-gray-100"
+            data-accordion
+          >
+            Why I should use travel agent
+            <span class="transform transition-transform">&#x25BC;</span>
+          </button>
+          <div class="p-4 hidden">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            massa. Cum sociis natoque penatibus.
+          </div>
+        </div>
+
+        <div class="border rounded-lg overflow-hidden">
+          <button
+            class="w-full flex justify-between items-center p-4 font-semibold text-left bg-white hover:bg-gray-100"
+            data-accordion
+          >
+            Do I need travel insurance
+            <span class="transform transition-transform">&#x25BC;</span>
+          </button>
+          <div class="p-4 hidden">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit
+            amet orci eget eros faucibus tincidunt.
+          </div>
+        </div>
+
+        <div class="border rounded-lg overflow-hidden">
+          <button
+            class="w-full flex justify-between items-center p-4 font-semibold text-left bg-white hover:bg-gray-100"
+            data-accordion
+          >
+            What payment methods are available
+            <span class="transform transition-transform">&#x25BC;</span>
+          </button>
+          <div class="p-4 hidden">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            tempus, tellus eget condimentum rhoncus.
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="/src/javascript/accordion.js"></script>
+  </body>
+</html>

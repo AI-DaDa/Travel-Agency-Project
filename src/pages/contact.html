@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.ico" />
+
+    <title>Contact us</title>
+    <link rel="stylesheet" href="/src/style/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold">Travel Agency</div>
+        <div class="hidden md:flex gap-8">
+          <a
+            href="/index.html"
+            class="font-medium text-gray-500 hover:text-black hover:border-b-2"
+            >Home</a
+          >
+          <a
+            href="/src/pages/about.html"
+            class="font-medium text-gray-500 hover:text-black hover:border-b-2 border-black"
+            >About</a
+          >
+          <div class="relative group">
+            <button
+              class="font-medium text-gray-500 hover:text-black hover:border-b-2 border-black"
+            >
+              Destinations
+            </button>
+          </div>
+          <a
+            href="/src/pages/service.html"
+            class="font-medium text-gray-500 hover:text-black hover:border-b-2 border-black"
+            >Service</a
+          >
+          <a
+            href="/src/pages/contact.html"
+            class="font-medium text-black border-b-2 hover:text-black hover:border-b-2 border-black"
+            >Contact</a
+          >
+        </div>
+        <div class="relative">
+          <button id="searchToggle" class="text-xl">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <div class="block md:hidden">
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8 4h13M8 12h13m-7 8h7"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="w-full max-w-9/10 mx-auto px-4 pb-24">
+      <div class="relative rounded-3xl overflow-hidden h-80">
+        <img
+          src="/public/assets/contact.jpg"
+          alt="Contact Background"
+          class="absolute w-full h-full object-cover"
+        />
+        <div
+          class="relative z-10 flex items-center justify-center h-full bg-black/30"
+        >
+          <h1 class="text-4xl font-bold text-white">Contact</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative pb-86">
+      <div class="text-center mb-32">
+        <h2 class="text-sm font-semibold text-gray-500">CONTACT</h2>
+        <h1 class="text-4xl font-bold">Get In Touch</h1>
+        <p class="mt-4 text-gray-500">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+      </div>
+
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 relative z-10">
+        <div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <h3 class="font-semibold mb-2">Ajman University</h3>
+              <p class="text-gray-500">University Street, Al Jerf 1, Ajman</p>
+              <p class="text-gray-500">+971 50 852 6665</p>
+              <p class="text-gray-500">202120115@ajmanuni.ac.ae</p>
+              <p class="text-gray-500">09.00 - 17.00</p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold mb-2">Technology</h3>
+              <p class="text-gray-500">University Street, Al Jerf 1, Ajman</p>
+              <p class="text-gray-500">+971 50 852 6665</p>
+              <p class="text-gray-500">202120115@ajmanuni.ac.ae</p>
+              <p class="text-gray-500">09.00 - 17.00</p>
+            </div>
+          </div>
+
+          <div class="text-start col-span-1 md:col-span-2">
+            <h3 class="font-semibold mb-2">Social Media</h3>
+            <div class="flex sm:justify-start justify-center gap-4 mt-4">
+              <a href="#" class="text-black text-2xl"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-black text-2xl"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-black text-2xl"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" class="text-black text-2xl"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative flex justify-end">
+          <div
+            class="p-8 rounded-xl shadow-2xl bg-white relative -mt-16 max-w-md w-full md:w-auto"
+          >
+            <form action="#">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  class="border border-zinc-300 p-3 rounded-md w-full"
+                />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  class="border p-3 border-zinc-300 rounded-md w-full"
+                />
+              </div>
+              <div class="mb-4">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="border border-zinc-300 p-3 rounded-md w-full"
+                />
+              </div>
+              <div class="mb-4">
+                <textarea
+                  placeholder="Message"
+                  class="border border-zinc-300 p-3 rounded-md w-full h-32"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-black text-white px-6 py-3 rounded-2xl w-full border hover:text-black hover:border hover:bg-white"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-96 absolute bottom-0 z-0">
+        <iframe
+          class="w-full h-full"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.776363068277!2d55.504000876101856!3d25.41229547757306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5f7efc9555555%3A0x8b63f4583099a98!2sAjman%20University!5e0!3m2!1sen!2sae!4v1744261526365!5m2!1sen!2sae"
+          frameborder="0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="bg-black text-white pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="text-2xl font-bold mb-4">Travel Agency</div>
+          <p class="text-gray-400 mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            pharetra condimentum.
+          </p>
+          <div class="flex gap-4">
+            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Our Address</h4>
+          <p class="text-gray-400">Ajman University</p>
+          <p class="text-gray-400">+971 50 852 6665</p>
+          <p class="text-gray-400">202120115@ajmanuni.ac.ae</p>
+          <p class="text-gray-400">09.00 - 17.00</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="text-gray-400 space-y-2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Newsletter</h4>
+          <form action="#" class="flex flex-col gap-4">
+            <input
+              type="email"
+              placeholder="Email"
+              class="p-3 rounded-lg bg-black border border-gray-300 text-white"
+            />
+            <button class="bg-white text-black px-6 py-2 rounded-full">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="text-center text-gray-500 text-sm mt-8">
+        Copyright &copy; 2025 Ajman University. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

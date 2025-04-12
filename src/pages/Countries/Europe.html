@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Europe</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+       <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold">Travel Agency</div>
+        <div class="hidden md:flex gap-8">
+          <a
+            href="#"
+            class="font-medium text-black border-b-2 focus:border-black hover:text-black hover:border-b-2 border-black"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="font-medium text-gray-500 hover:text-black hover:border-b-2 border-black"
+            >About</a
+          >
+          <div class="relative group">
+            <button
+              class="font-medium text-gray-500 hover:text-black hover:border-b-2 border-black"
+            >
+              Destinations
+            </button>
+          </div>
+          <a
+            href="#"
+            class="font-medium text-gray-500 hover:text-black hover:border-b-2 border-black"
+            >Service</a
+          >
+          <a
+            href="/src/pages/contact.html"
+            class="font-medium text-gray-500 hover:text-black hover:border-b-2 border-black"
+            >Contact</a
+          >
+        </div>
+        <div class="relative">
+          <button id="searchToggle" class="text-xl">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <div class="block md:hidden">
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8 4h13M8 12h13m-7 8h7"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="w-full max-w-9/10 mx-auto px-4 pb-10">
+      <div class="relative rounded-3xl overflow-hidden h-80">
+        <img
+          src="/public/assets/contact.jpg"
+          alt="Contact Background"
+          class="absolute w-full h-full object-cover"
+        />
+        <div
+          class="relative z-10 flex items-center justify-center h-full bg-black/30"
+        >
+          <h1 class="text-4xl font-bold text-white">Europe</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto grid lg:grid-cols-3 gap-8 px-4 py-16">
+      <div class="lg:col-span-2 space-y-8">
+        
+        <div>
+          <h1 class="text-4xl font-bold mb-6">Europe places.. etc</h1>
+          <img src="/public/assets/contact.jpg" alt="Hidden Cave" class="w-full max-h-100 rounded-xl shadow-lg">
+        </div>
+    
+        <div class="space-y-6">
+          <h2 class="text-2xl font-semibold">Tour Description</h2>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus!
+          </p>
+    
+          <div class="grid grid-cols-2 gap-8">
+            <div>
+              <h3 class="font-semibold mb-2">Include</h3>
+              <ul class="space-y-1 text-gray-600 list-inside">
+                <li><i class="fas fa-check"></i> Accommodation</li>
+                <li><i class="fas fa-check"></i> Pick Up</li>
+                <li><i class="fas fa-check"></i> Breakfast</li>
+                <li><i class="fas fa-check"></i> Entrance Ticket</li>
+                <li><i class="fas fa-check"></i> Snacks</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold mb-2">Exclude</h3>
+              <ul class="space-y-1 text-gray-600  list-inside">
+                
+                <li> <i class="fas fa-check"></i> Lunch</li>
+                <li> <i class="fas fa-check"></i> Dinner</li>
+                <li> <i class="fas fa-check"></i> Diver</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <div class="space-y-4">
+          <h2 class="text-2xl font-semibold mb-4">Schedule</h2>
+    
+          <div class="border border-zinc-200 rounded-lg overflow-hidden">
+            <button class="w-full flex justify-between p-4 font-semibold bg-gray-100" data-accordion>
+              Day 1: Departure
+              <span class="transform transition-transform"><i class="fa-solid fa-arrow-down"></i></span>
+            </button>
+            <div class="p-4 hidden text-gray-600">
+              Departure details and activities.
+            </div>
+          </div>
+    
+          <div class="border border-zinc-200 rounded-lg overflow-hidden">
+            <button class="w-full flex justify-between p-4 font-semibold bg-gray-100" data-accordion>
+              Day 2: Go into Hidden Cave
+              <span class="transform transition-transform"><i class="fa-solid fa-arrow-down"></i></span>
+            </button>
+            <div class="p-4 hidden text-gray-600">
+              Hidden Cave exploration activities.
+            </div>
+          </div>
+    
+          <div class="border border-zinc-200 rounded-lg overflow-hidden">
+            <button class="w-full flex justify-between p-4 font-semibold bg-gray-100" data-accordion>
+              Day 3: Hot Springs Bath
+              <span class="transform transition-transform"><i class="fa-solid fa-arrow-down"></i></span>
+            </button>
+            <div class="p-4 hidden text-gray-600">
+              Relaxing at the hot springs.
+            </div>
+          </div>
+        </div>
+    
+        <!-- Booking Form -->
+        <div class="space-y-6">
+          <h2 class="text-2xl font-semibold mb-4">Book Now</h2>
+          <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="text" placeholder="First Name" class="border border-zinc-200 p-3 rounded w-full">
+            <input type="text" placeholder="Last Name" class="border border-zinc-200 p-3 rounded w-full">
+            <input type="email" placeholder="Email" class="border border-zinc-200 p-3 rounded w-full">
+            <input type="text" placeholder="Phone" class="border border-zinc-200 p-3 rounded w-full">
+            <input type="date" placeholder="Date" class="border border-zinc-200  md:col-span-2  p-3 rounded w-full">
+            <textarea placeholder="Message" class="border border-zinc-200 p-3 rounded w-full md:col-span-2 h-32"></textarea>
+          </form>
+          <button class="mt-4 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">
+            Book Now
+          </button>
+        </div>
+    
+      </div>
+    
+      <aside class="space-y-8 shadow-md p-4 rounded-xl border-zinc-100 border">
+        
+        <div class="text-center p-6">
+          <div class="text-4xl font-bold mb-2">$1295</div>
+          <div class="text-gray-500">/ person</div>
+        </div>
+    
+        <div class="rounded-xl text-center space-y-4">
+          <img src="/public/assets/contact.jpg" alt="Tour Guide" class="w-24 h-24 mx-auto rounded-full object-cover">
+          <h3 class="font-semibold">Ali Mohamed</h3>
+          <p class="text-gray-500 text-sm">Tour Guide</p>
+        </div>
+    
+        <div >
+          <h4 class="font-semibold mb-4">Tour Detail</h4>
+          <ul class="space-y-4 text-gray-600 text-sm px-4">
+            <li>📍 Dubai</li>
+            <li>🕒 3 Days 2 Nights</li>
+            <li>👥 5 People Max</li>
+            <li>📅 July - August</li>
+          </ul>
+        </div>
+    
+        <div class=" ">
+          <h4 class="font-semibold  mb-4">Location</h4>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22054716.99131882!2d1.0893602443509316!3d47.563387261465714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ed8886cfadda85%3A0x72ef99e6b3fcf079!2sEurope!5e0!3m2!1sen!2sae!4v1744480923315!5m2!1sen!2sae" 
+            width="100%" height="200" frameborder="0" class="rounded-xl" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+    
+        <div class="text-center">
+          <a href="#" class="block bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">
+            Download Brochure
+          </a>
+        </div>
+    
+        <div class="bg-gray-100 p-6 rounded-xl space-y-2 text-center">
+          <h4 class="font-semibold">Have Any Question?</h4>
+          <p class="text-gray-600 text-sm">Feel free to reach out to us!</p>
+          <div class="text-gray-600 text-sm">
+            📞 +971 50 852 6665 <br>
+            ✉️ 202120115@ajmanuni.ac.ae
+          </div>
+        </div>
+        <div class="text-center">
+          <h4 class="font-semibold mb-4">Follow Us</h4>
+          <p class="text-gray-600 text-sm mb-4">Stay connected with us on social media!</p>
+        <div class="flex justify-center space-x-4 mt-6">
+
+          <a href="#" class="text-xl"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-xl"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-xl"><i class="fab fa-instagram"></i></a>
+        </div>
+    
+      </aside>
+    </section>
+
+
+    <footer class="bg-black text-white pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="text-2xl font-bold mb-4">Travel Agency</div>
+          <p class="text-gray-400 mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            pharetra condimentum.
+          </p>
+          <div class="flex gap-4">
+            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Our Address</h4>
+          <p class="text-gray-400">Ajman University</p>
+          <p class="text-gray-400">+971 50 852 6665</p>
+          <p class="text-gray-400">202120115@ajmanuni.ac.ae</p>
+          <p class="text-gray-400">09.00 - 17.00</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="text-gray-400 space-y-2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Newsletter</h4>
+          <form action="#" class="flex flex-col gap-4">
+            <input
+              type="email"
+              placeholder="Email"
+              class="p-3 rounded-lg bg-black border border-zinc-700 text-white"
+            />
+            <button
+              class="bg-white text-black px-6 py-2 rounded-full border hover:border-white hover:text-white hover:bg-black"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="text-center text-gray-500 text-sm mt-8">
+        Copyright &copy; 2025 Ajman University. All rights reserved.
+      </div>
+    </footer>
+    <script type="module" src="/src/javascript/accordion.js"></script>
+  </body>
+</html>
